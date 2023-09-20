@@ -1,0 +1,4 @@
+$servername = "localhost";
+$username = "gatelysy_njogu";
+$password = "gately@123";
+$dbname = "gatelysy_gately";

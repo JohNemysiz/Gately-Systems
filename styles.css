@@ -1,0 +1,133 @@
+h1{
+  text-align: center;
+  color: #00bfff;
+  font-size: 29px;
+}
+
+.container2 {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  .container2 {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 90px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .container2 h1 {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: #00bfff;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="phone Number"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: auto;
+    padding: 10px;
+    color: #fff;
+    background-color: #0080ff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: large;
+  }
+  .but-form{
+    display: flex;
+    flex-direction: row;
+  }
+  button[type="submit"]:hover {
+    background-color: #0080ff;
+  }
+  /* styling for the show password input */
+  /* Style the password input field */
+  #passwordInput {
+    width: 95%; /* Set a fixed width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* Style the checkbox and label */
+  #showPassword {
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  
+  /* Hide the default checkbox appearance */
+  #showPassword::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+  }
+  
+  /* Style the checkbox when checked */
+  #showPassword:checked::before {
+    background-color: #00bfff; /* Change to desired color */
+  }
+  
+  /* Visually hide the checkbox */
+  #showPassword {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+  }
+  
+  /* Style the email input field */
+  #phoneInput {
+    width: 95%; /* Set a fixed width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.logo-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.error{
+  background: #F2DEDE;
+  color:#A94442;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+}

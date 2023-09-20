@@ -1,0 +1,499 @@
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffff;
+}
+li p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero h1 h2{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 32px;
+}
+header {
+  background-color: #00bfff;
+  color: #fff;
+  padding: 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+  font-size: 22px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 3px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 10px;
+  background-color: #ffffff00;
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 0;
+  height: 300px;
+  background-image: url(pics/Homeimg.jpg);
+  /* background-color: rgba(0, 0, 0, 0.2); */
+  background-repeat: no-repeat;
+}
+
+.hero2 {
+  text-align: center;
+  padding: 100px 0;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-image: url(pics/Homeimg.jpg);
+}
+.hero2{
+  font-family:'Caprasimo', cursive ;
+  font-size: 40px;
+  color: #f0f0f0;
+}
+
+.hero h1 {
+  font-size: 36px;
+  /* margin-bottom: 20px; */
+}
+
+.hero p {
+  font-family: 'Dancing Script', cursive;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ececec;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #0080ff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.feature {
+  flex-basis: 30%;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+  left: 5px;
+  text-align: center;
+  height: 300px; /* Increase the height to your desired value */
+  box-shadow: px 0px 3px #00bfff; /* Update box shadow color */
+}
+
+.feature h3, .feature p {
+  margin-top: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-family:  'Dancing Script', cursive;
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .feature {
+    flex-basis: 100%;
+  }
+}
+.feature i {
+  font-size: 30px;
+}
+
+.features2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature2 {
+  flex: 1;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: 20px;
+  height: 400px;
+  margin: 30px;
+}
+
+.feature2 h3, .feature2 p {
+  margin-top: 10px;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-family:  'Dancing Script', cursive;
+  font-size: 22px;
+}
+
+@media (max-width: 768px) {
+  .feature2 {
+    flex-basis: 100%;
+  }
+}
+.feature2 i {
+  font-size: 30px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav-active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(0, 191, 255, 0.8); /* Adjust transparency here */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-active li {
+    opacity: 1;
+    margin-bottom: 20px;
+  }
+
+  .nav-active li:last-child {
+    margin-bottom: 0;
+  }
+
+  .nav-active li a {
+    color: #fff;
+    font-size: 20px;
+  }
+
+  .line1,
+  .line2,
+  .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .burger.open .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .burger.open .line2 {
+    opacity: 0;
+  }
+
+  .burger.open .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+}
+/* signin form */
+
+
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 100px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container2 {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-bottom: 90px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.container h1 {
+  font-family: 'Caprasimo', cursive ,sans-serif;
+  text-align: center;
+  color: #00bfff;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="phone Number"],
+input[type="password"], 
+input[type="email"] 
+input[type="text"]
+{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: #0080ff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+}
+
+button[type="submit"]:hover {
+  background-color: #0080ff;
+}
+/* styling for the show password input */
+/* Style the password input field */
+#passwordInput {
+  width: 95%; /* Set a fixed width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+/* Style the checkbox and label */
+#showPassword {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* Hide the default checkbox appearance */
+#showPassword::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+/* Style the checkbox when checked */
+#showPassword:checked::before {
+  background-color: #00bfff; /* Change to desired color */
+}
+
+/* Visually hide the checkbox */
+#showPassword {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+
+/* Style the email input field */
+#phoneInput {
+  width: 95%; /* Set a fixed width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;  
+}
+
+#telephone {
+  width: 95%; /* Set a fixed width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+#emailInput {
+  width: 95%; /* Set a fixed width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+}
+#currentPasswordInput{
+    width: 160%; /* Set a fixed width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+}
+#newPasswordInput{
+  width: 160%; /* Set a fixed width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+
+}
+#confirmNewPasswordInput{
+  width: 160%; /* Set a fixed width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+}
+#verificationCode{
+  width: 160%; /* Set a fixed width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+
+/* icons styling */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+/* footer for dashboard */
+.staybt{
+  margin-top: auto;
+  /* background-color: #f5f5f5; */
+  padding: 20px;
+}
+.feature2 {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+.heading {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.sub-heading {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: #777;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+/* dashboard div style */
+
+
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; 
+} */
+
+.feature {
+  text-align: center;
+}
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+#grid {
+	width: 100%;
+	height: 400px;
+}
+/* styling for links like forgot password  */
+.additional-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.left-link,
+.right-link {
+  text-decoration: none;
+  color: blue;
+}
